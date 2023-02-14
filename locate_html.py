@@ -20,6 +20,7 @@ driver.get("https://techwithtim.net")  # open a web page and go to the specified
 # Say we have a search bar whose name is "s", what we can try to do is:
 
 search = driver.find_element_by_name("s")  # try to find the element whose name is "s" (on techwithtim's website, on 14/02/2023, it refers to a searchbar)
+search.clear() # a usefull method that clear the field to be sure that there will only be what we want in the search bar
 search.send_keys("test")  # type the string "test" in the searchbar
 search.send_keys(Keys.RETURN) # press enter to execute the search
 
